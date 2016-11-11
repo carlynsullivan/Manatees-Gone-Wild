@@ -1,0 +1,155 @@
+.container-fluid {
+  background-color: #80CED7;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+.logo {
+  padding: 0;
+  height: 45px;
+}
+
+.main-container {
+  background-color: navy;
+  background-image: url(../img/underwaterLight.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px white;
+  height: 600px;
+	clear: both;
+  background-color: transparent;
+  /*background-color: mediumturquoise;*/
+  border-bottom: 5px 5px red;
+  /*opacity: 0.5;*/
+}
+
+h1 {
+  position: relative;
+  top: 245px;
+}
+
+.btn-lg {
+  position: relative;
+  top: 245px;
+}
+
+.manatee-float {
+  display: none;
+  position: absolute;
+  left: 36%;
+  top: 10%;
+  width: 40px;
+}
+
+/*.jumbo-content {
+  opacity: 1.0;
+}*/
+/*.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}*/
+
+#movie-holder {
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  /*border-width: 2px 2px;*/
+}
+
+video {
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 80px;
+}
+
+/*.placeholder {
+  margin-top: 10px;
+  position: relative;
+  left: 15%;
+  text-align: center;
+  height: 400px;
+  border-width: 2px 2px 2px 2px;
+  border-color: white;
+
+}*/
+
+.caption {
+  position: relative;
+  top: 100px;
+  float: right;
+  right: 80px;
+  width: 300px;
+  height: 200px;
+  /*background-color: white;*/
+  border-radius: 50%;
+}
+
+h3 {
+  position: relative;
+  top: 50px;
+  color: white;
+  /*text-shadow: 2px 2px #80CED7;*/
+  text-align: center;
+}
+
+/*.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}*/
+
+.navbar-fixed-bottom,
+.container {
+  padding: 0px;
+  height: 100px;
+  text-align: center;
+  background-color: #80CED7;
+  width: 100%;
+}
+
+.footer-text {
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+  position: relative;
+  margin: 30px;
+  bottom: 40px;
+}
