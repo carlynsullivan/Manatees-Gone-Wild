@@ -13,7 +13,9 @@
 
 $(document).ready(function() {
 
-$(".manatee-float").fadeIn().animate({width:"300px"}, 1000);	
+	$(".manatee-float").fadeIn().animate({width:"300px"}, 12000);
+
+	$(".manatee-float2").fadeIn().animate({width:"150px", top: "25%", left: "58%"}, 12000);	
 
 });
 

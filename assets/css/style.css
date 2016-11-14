@@ -48,6 +48,14 @@ h1 {
   width: 40px;
 }
 
+.manatee-float2 {
+  display: none;
+  position: absolute;
+  left: 42%;
+  top: 10%;
+  width: 20px;
+}
+
 /*.jumbo-content {
   opacity: 1.0;
 }*/
@@ -88,9 +96,9 @@ video {
 
 .caption {
   position: relative;
-  top: 100px;
+  top: 120px;
   float: right;
-  right: 80px;
+  right: 140px;
   width: 300px;
   height: 200px;
   /*background-color: white;*/
