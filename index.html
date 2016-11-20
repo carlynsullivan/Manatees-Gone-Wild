@@ -123,61 +123,65 @@
 </div>
 
 <div id="infoHolder">
-<!--   <script type="text/javascript">
-function arkiveEmbedCallback(data){
-  var iframeCreation='<iframe id="frame" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
-  var iframe=window.location.protocol+"//"+(data.results[0].url);
-  if(data.error!='null'){
-    document.getElementById("arkiveIframe").innerHTML=iframeCreation;
-    var iframeAttr=parent.document.getElementById("frame");
-    iframeAttr.height=570;
-    iframeAttr.width=672;
-    iframeAttr.src=iframe;
-  }
-}
-(function(){
-  function async_load(){
-    var s=document.createElement('script');s.type='text/javascript';s.async=true;
-    s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Trichechus%20manatus?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=4ff16eb0-031e-4629-8557-9cb7012b1f58&w=650&h=570&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback';
-    var x=document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s,x);
-  }
-  if(window.attachEvent){
-    window.attachEvent('onload',async_load);
-  }else{
-    window.addEventListener('load',async_load,false);
-  }
-})();
-</script>
-<div id="arkiveIframe"></div> -->
 
-<script type="text/javascript">
-function arkiveEmbedCallback(data){
-  var iframeCreation='<iframe id="frame" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
-  var iframe=window.location.protocol+"//"+(data.results[0].url);
-  if(data.error!='null'){
-    document.getElementById("arkiveIframe").innerHTML=iframeCreation;
-    var iframeAttr=parent.document.getElementById("frame");
-    iframeAttr.height=570;
-    iframeAttr.width=672;
-    iframeAttr.src=iframe;
+  <!--manatee arkive embed-->
+  <script type="text/javascript">
+  function arkiveEmbedCallback(data_01){
+    var iframeCreation='<iframe id="frame_01" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
+    var iframe=window.location.protocol+"//"+(data.results[0].url);
+    if(data.error!='null'){
+      document.getElementById("arkiveIframe_01").innerHTML=iframeCreation;
+      var iframeAttr=parent.document.getElementById("frame_01");
+      iframeAttr.height=350;
+      iframeAttr.width=342;
+      iframeAttr.src=iframe;
+    }
   }
-}
-(function(){
-  function async_load(){
-    var s=document.createElement('script');s.type='text/javascript';s.async=true;
-    s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Dugong%20dugon?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=c3918185-ff90-4bb8-9ad3-9cb7012e30eb&w=650&h=570&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback';
-    var x=document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s,x);
+  (function(){
+    function async_load_01(){
+      var s=document.createElement('script');s.type='text/javascript';s.async=true;
+      s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Trichechus%20manatus?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=4ff16eb0-031e-4629-8557-9cb7012b1f58&w=320&h=350&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback_01';
+      var x=document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s,x);
+    }
+    if(window.attachEvent){
+      window.attachEvent('onload',async_load_01);
+    }else{
+      window.addEventListener('load',async_load_01,false);
+    }
+  })();
+  </script>
+  <div id="arkiveIframe_01"></div>
+
+  <!--dugong arkive embed-->
+  <script type="text/javascript">
+  function arkiveEmbedCallback_02(data){
+    var iframeCreation='<iframe id="frame_02" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
+    var iframe=window.location.protocol+"//"+(data.results[0].url);
+    if(data.error!='null'){
+      document.getElementById("arkiveIframe_02").innerHTML=iframeCreation;
+      var iframeAttr=parent.document.getElementById("frame_02");
+      iframeAttr.height=350;
+      iframeAttr.width=342;
+      iframeAttr.src=iframe;
+    }
   }
-  if(window.attachEvent){
-    window.attachEvent('onload',async_load);
-  }else{
-    window.addEventListener('load',async_load,false);
-  }
-})();
-</script>
-<div id="arkiveIframe"></div>
+  (function(){
+    function async_load_02(){
+      var s=document.createElement('script');s.type='text/javascript';s.async=true;
+      s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Dugong%20dugon?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=c3918185-ff90-4bb8-9ad3-9cb7012e30eb&w=320&h=350&mtype=all&tn=1&text=1&callback=arkiveEmbedCallback_02';
+      var x=document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s,x);
+    }
+    if(window.attachEvent){
+      window.attachEvent('onload',async_load_02);
+    }else{
+      window.addEventListener('load',async_load_02,false);
+    }
+  })();
+  </script>
+  <div id="arkiveIframe_02"></div>
+
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">

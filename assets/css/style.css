@@ -145,6 +145,10 @@ h3 {
   }
 }*/
 
+#arkiveIframe {
+  margin-bottom: 20px;
+}
+
 .navbar-fixed-bottom,
 .container {
   padding: 0px;
