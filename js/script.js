@@ -28,7 +28,7 @@ $(document).ready(function() {
 		    iframeAttr.width = arkiveApiWidth + 22;
 		    iframeAttr.src = iframe;
 	    }
-	}
+	};
 	
 	(function () {
 	    function async_load() {
@@ -43,7 +43,8 @@ $(document).ready(function() {
 	        window.attachEvent('onload', async_load);
 	    else
 	        window.addEventListener('load', async_load, false);
-	})();
+	});
+	();
 
 	//arkive embedded feature2
 	function arkiveEmbedCallback_2(data) {
@@ -56,7 +57,7 @@ $(document).ready(function() {
 		    iframeAttr.width = arkiveApiWidth + 22;
 		    iframeAttr.src = iframe;
 	    }
-	}
+	};
 	
 	(function () {
 	    function async_load_2() {
@@ -71,7 +72,8 @@ $(document).ready(function() {
 	        window.attachEvent('onload', async_load_2);
 	    else
 	        window.addEventListener('load', async_load_2, false);
-	})();
+	});
+	();
                     
 
 });//closing document ready function
