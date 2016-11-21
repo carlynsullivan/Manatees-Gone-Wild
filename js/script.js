@@ -35,7 +35,7 @@ $(document).ready(function() {
 	        var s = document.createElement('script'); 
 	        s.type = 'text/javascript';
 	        s.async = true;
-	        s.src = 'https://api.arkive.org/v2/embedScript/species/scientificName/' + arkiveApiSpeciesName + '?key=' + arkiveApiKey + (arkiveApiSpeciesId ? '&id=' + arkiveApiSpeciesId : '') + '&mtype=all&w=' + arkiveApiWidth + '&h=' + arkiveApiHeight + '&tn=' + (arkiveApiImages ? 1 : 0) + '&text=' + (arkiveApiText ? 1 : 0) + '&callback=arkiveEmbedCallback';
+	        s.src = 'https://api.arkive.org/v2/embedScript/species/scientificName/' + arkiveApiSpeciesName + '?key=' + arkiveApiKey + '&mtype=all&w=' + arkiveApiWidth + '&h=' + arkiveApiHeight + '&tn=' + (arkiveApiImages ? 1 : 0) + '&text=' + (arkiveApiText ? 1 : 0) + '&callback=arkiveEmbedCallback';
 	        var x = document.getElementsByTagName('script')[0];
 	        x.parentNode.insertBefore(s, x);
 	    }
@@ -63,7 +63,7 @@ $(document).ready(function() {
 	        var s = document.createElement('script'); 
 	        s.type = 'text/javascript';
 	        s.async = true;
-	        s.src = 'https://api.arkive.org/v2/embedScript/species/scientificName/' + arkiveApiSpeciesName_2 + '?key=' + arkiveApiKey + (arkiveApiSpeciesId ? '&id=' + arkiveApiSpeciesId : '') + '&mtype=all&w=' + arkiveApiWidth + '&h=' + arkiveApiHeight + '&tn=' + (arkiveApiImages ? 1 : 0) + '&text=' + (arkiveApiText ? 1 : 0) + '&callback=arkiveEmbedCallback';
+	        s.src = 'https://api.arkive.org/v2/embedScript/species/scientificName/' + arkiveApiSpeciesName_2 + '?key=' + arkiveApiKey + '&mtype=all&w=' + arkiveApiWidth + '&h=' + arkiveApiHeight + '&tn=' + (arkiveApiImages ? 1 : 0) + '&text=' + (arkiveApiText ? 1 : 0) + '&callback=arkiveEmbedCallback';
 	        var x = document.getElementsByTagName('script')[0];
 	        x.parentNode.insertBefore(s, x);
 	    }
