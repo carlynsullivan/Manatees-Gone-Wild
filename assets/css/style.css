@@ -145,9 +145,11 @@ h3 {
   }
 }*/
 
-#arkiveIframe {
+/*#arkiveIframe {
   margin-bottom: 20px;
-}
+}*/
+
+#frame { overflow : hidden; }
 
 .navbar-fixed-bottom,
 .container {

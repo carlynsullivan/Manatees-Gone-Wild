@@ -124,8 +124,52 @@
 
 <div id="infoHolder">
 
-  <!--manatee arkive embed-->
-  <script type="text/javascript">
+  <!-- Replace the first 3 values with your own API key and the details       -->
+<!-- for the species you want to display.                                   -->
+<!-- Set the 4 configuration options according to your needs.               -->
+<script type="text/javascript">
+    var arkiveApiKey = '_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1',
+    arkiveApiSpeciesName = 'Trichechus%20manatus', // note spaces replaced by %20
+    //arkiveApiSpeciesId = '00000000-0000-0000-0000-000000000000', 
+        // optional, but recommended
+
+    arkiveApiWidth = 320,
+    arkiveApiHeight = 355,
+    arkiveApiImages = true, // whether to include thumbnails
+    arkiveApiText = true; // whether to include species facts / description
+</script>
+<!-- ensure the src attribute in the following script tag points to your JS file -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+<div id="arkiveIframe"></div>
+
+<script type="text/javascript">
+    var arkiveApiKey = '_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1',
+    arkiveApiSpeciesName_2 = 'Dugong%20dugon', // note spaces replaced by %20
+    //arkiveApiSpeciesId = '00000000-0000-0000-0000-000000000000', 
+        // optional, but recommended
+
+    arkiveApiWidth = 320,
+    arkiveApiHeight = 355,
+    arkiveApiImages = true, // whether to include thumbnails
+    arkiveApiText = true; // whether to include species facts / description
+</script>
+<!-- ensure the src attribute in the following script tag points to your JS file -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+<div id="arkiveIframe_2"></div>
+                    
+
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <span class="footer-text">Listen to the sounds of Cocoa Beach.</span>
+    <iframe src="https://tunein.com/embed/player/s249433?autplay=1" style="width:30%;height:100px;" scrolling="no" autoplay="yes" frameborder="no"></iframe>
+    <span class="footer-text">Click the play button twice.</span>
+  </div>
+</nav>
+
+<!--manatee arkive embed-->
+<!--   <script type="text/javascript">
   function arkiveEmbedCallback(data_01){
     var iframeCreation='<iframe id="frame_01" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
     var iframe=window.location.protocol+"//"+(data.results[0].url);
@@ -151,10 +195,10 @@
     }
   })();
   </script>
-  <div id="arkiveIframe_01"></div>
+  <div id="arkiveIframe_01"></div> -->
 
   <!--dugong arkive embed-->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
   function arkiveEmbedCallback_02(data){
     var iframeCreation='<iframe id="frame_02" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
     var iframe=window.location.protocol+"//"+(data.results[0].url);
@@ -180,17 +224,7 @@
     }
   })();
   </script>
-  <div id="arkiveIframe_02"></div>
-
-</div>
-
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <span class="footer-text">Listen to the sounds of Cocoa Beach.</span>
-    <iframe src="https://tunein.com/embed/player/s249433?autplay=1" style="width:30%;height:100px;" scrolling="no" autoplay="yes" frameborder="no"></iframe>
-    <span class="footer-text">Click the play button twice.</span>
-  </div>
-</nav>
+  <div id="arkiveIframe_02"></div>  -->
 
 </body>
 </html>
