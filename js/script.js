@@ -43,7 +43,7 @@ $(document).ready(function() {
 	        window.attachEvent('onload', async_load);
 	    else
 	        window.addEventListener('load', async_load, false);
-	});
+	})
 	();
 
 	//arkive embedded feature2
@@ -72,7 +72,7 @@ $(document).ready(function() {
 	        window.attachEvent('onload', async_load_2);
 	    else
 	        window.addEventListener('load', async_load_2, false);
-	});
+	})
 	();
                     
 
