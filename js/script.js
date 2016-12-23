@@ -13,9 +13,31 @@
 
 $(document).ready(function() {
 	//parent manatee functionality
-	$(".manatee-float").fadeIn().animate({width:"300px"}, 12000);
+	$(".manatee-float").fadeIn().animate({width:"300px", left: "35%"}, 15000);
 	//baby manatee functionality
-	$(".manatee-float2").fadeIn().animate({width:"150px", top: "25%", left: "58%"}, 12000);	
+	$(".manatee-float2").fadeIn().animate({width:"150px", top: "25%", left: "58%"}, 15000);
+
+	// document.getElementById('watchLiveLink').on("click", function() {
+	// 	document.querySelector('#movie-holder').scrollIntoView({ 
+	//   		behavior: 'smooth'; 
+	// 	});	
+	// });
+
+
+
+	 $('a[href*="#"]:not([href="#"])').click(function() {
+	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	    var target = $(this.hash);
+	    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	    if (target.length) {
+	      $('html, body').animate({
+	        scrollTop: target.offset().top
+	      }, 1000);
+	      return false;
+	    }
+	  }
+	});
+	
 
 	//arkive embedded feature1
 	function arkiveEmbedCallback(data) {

@@ -43,7 +43,7 @@ h1 {
 .manatee-float {
   display: none;
   position: absolute;
-  left: 36%;
+  left: 54%;
   top: 10%;
   width: 40px;
 }
@@ -51,7 +51,7 @@ h1 {
 .manatee-float2 {
   display: none;
   position: absolute;
-  left: 42%;
+  left: 58%;
   top: 10%;
   width: 20px;
 }
