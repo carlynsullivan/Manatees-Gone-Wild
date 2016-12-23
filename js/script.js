@@ -24,7 +24,7 @@ $(document).ready(function() {
 	// });
 
 
-
+	//smooth scroll
 	 $('a[href*="#"]:not([href="#"])').click(function() {
 	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 	    var target = $(this.hash);
@@ -37,36 +37,62 @@ $(document).ready(function() {
 	    }
 	  }
 	});
+
+
+	function arkiveEmbedCallback(data){
+	  var iframeCreation='<iframe id="frame" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
+	  var iframe=window.location.protocol+"//"+(data.results[0].url);
+	  if(data.error!='null'){
+	    document.getElementById("arkiveIframe").innerHTML=iframeCreation;
+	    var iframeAttr=parent.document.getElementById("frame");
+	    iframeAttr.height=570;
+	    iframeAttr.width=672;
+	    iframeAttr.src=iframe;
+	  }
+	}
+	(function(){
+	  function async_load(){
+	    var s=document.createElement('script');s.type='text/javascript';s.async=true;
+	    s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Trichechus%20manatus?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=4ff16eb0-031e-4629-8557-9cb7012b1f58&w=650&h=570&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback';
+	    var x=document.getElementsByTagName('script')[0];
+	    x.parentNode.insertBefore(s,x);
+	  }
+	  if(window.attachEvent){
+	    window.attachEvent('onload',async_load);
+	  }else{
+	    window.addEventListener('load',async_load,false);
+	  }
+	})();
 	
 
 	//arkive embedded feature1
-	function arkiveEmbedCallback(data) {
-		var iframeCreation = '<iframe id="frame" name="widget" src ="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
-		var iframe = window.location.protocol + "//" + (data.results[0].url);
-		if (data.error != 'null') {
-	  	    document.getElementById("arkiveIframe").innerHTML = iframeCreation;
-		    var iframeAttr = parent.document.getElementById("frame");
-		    iframeAttr.height = arkiveApiHeight;
-		    iframeAttr.width = arkiveApiWidth + 22;
-		    iframeAttr.src = iframe;
-	    }
-	};
+	// function arkiveEmbedCallback(data) {
+	// 	var iframeCreation = '<iframe id="frame" name="widget" src ="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
+	// 	var iframe = window.location.protocol + "//" + (data.results[0].url);
+	// 	if (data.error != 'null') {
+	//   	    document.getElementById("arkiveIframe").innerHTML = iframeCreation;
+	// 	    var iframeAttr = parent.document.getElementById("frame");
+	// 	    iframeAttr.height = arkiveApiHeight;
+	// 	    iframeAttr.width = arkiveApiWidth + 22;
+	// 	    iframeAttr.src = iframe;
+	//     }
+	// };
 	
-	(function () {
-	    function async_load() {
-	        var s = document.createElement('script'); 
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'https://api.arkive.org/v2/embedScript/species/scientificName/' + arkiveApiSpeciesName + '?key=' + arkiveApiKey + '&mtype=all&w=' + arkiveApiWidth + '&h=' + arkiveApiHeight + '&tn=' + (arkiveApiImages ? 1 : 0) + '&text=' + (arkiveApiText ? 1 : 0) + '&callback=arkiveEmbedCallback';
-	        var x = document.getElementsByTagName('script')[0];
-	        x.parentNode.insertBefore(s, x);
-	    }
-	    if (window.attachEvent)
-	        window.attachEvent('onload', async_load);
-	    else
-	        window.addEventListener('load', async_load, false);
-	})
-	();
+	// (function () {
+	//     function async_load() {
+	//         var s = document.createElement('script'); 
+	//         s.type = 'text/javascript';
+	//         s.async = true;
+	//         s.src = 'https://api.arkive.org/v2/embedScript/species/scientificName/' + arkiveApiSpeciesName + '?key=' + arkiveApiKey + '&mtype=all&w=' + arkiveApiWidth + '&h=' + arkiveApiHeight + '&tn=' + (arkiveApiImages ? 1 : 0) + '&text=' + (arkiveApiText ? 1 : 0) + '&callback=arkiveEmbedCallback';
+	//         var x = document.getElementsByTagName('script')[0];
+	//         x.parentNode.insertBefore(s, x);
+	//     }
+	//     if (window.attachEvent)
+	//         window.attachEvent('onload', async_load);
+	//     else
+	//         window.addEventListener('load', async_load, false);
+	// })
+	// ();
 
 	//arkive embedded feature2
 	// function arkiveEmbedCallback_2(data) {

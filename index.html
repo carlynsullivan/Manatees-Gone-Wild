@@ -99,7 +99,9 @@
       <img src="assets/img/manatee2.png" class="manatee-float2">
           <!-- <img src="assets/img/logo.png" width="100px" class="logo"> -->
           <h1>ManateesGoneWild.com</h1>
-          <p><a class="btn btn-primary btn-lg" href="#about-section" role="button"><span class="sr-only">(current)</span></a>Learn more</a></p>
+          <!-- <p><a class="btn btn-primary btn-lg" href="https://en.wikipedia.org/wiki/Manatee" role="button" target="_blank">Learn more</a></p> -->
+
+          <p><a class="btn btn-primary btn-lg" href="#about-section" role="button"><span class="sr-only">(current)</span>Learn more</a></p>
         <!-- </div> -->
       <!-- </div> -->
       
@@ -143,32 +145,60 @@
 
 </div>
 
-<div id="infoHolder">
+<script type="text/javascript">
+function arkiveEmbedCallback(data){
+  var iframeCreation='<iframe id="frame" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
+  var iframe=window.location.protocol+"//"+(data.results[0].url);
+  if(data.error!='null'){
+    document.getElementById("arkiveIframe").innerHTML=iframeCreation;
+    var iframeAttr=parent.document.getElementById("frame");
+    iframeAttr.height=570;
+    iframeAttr.width=672;
+    iframeAttr.src=iframe;
+  }
+}
+(function(){
+  function async_load(){
+    var s=document.createElement('script');s.type='text/javascript';s.async=true;
+    s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Trichechus%20manatus?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=4ff16eb0-031e-4629-8557-9cb7012b1f58&w=650&h=570&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback';
+    var x=document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s,x);
+  }
+  if(window.attachEvent){
+    window.attachEvent('onload',async_load);
+  }else{
+    window.addEventListener('load',async_load,false);
+  }
+})();
+</script>
+<div id="arkiveIframe"></div>
+
+<!-- <div id="infoHolder"> -->
 
   <!-- Replace the first 3 values with your own API key and the details       -->
 <!-- for the species you want to display.                                   -->
 <!-- Set the 4 configuration options according to your needs.               -->
-<script type="text/javascript">
-    var arkiveApiKey = '_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1',
-    arkiveApiSpeciesName = 'Trichechus%20manatus',
-    // arkiveApiSpeciesName_2 = 'Dugong%20dugon', // note spaces replaced by %20
-    //arkiveApiSpeciesId = '00000000-0000-0000-0000-000000000000', 
-        // optional, but recommended
+<!-- <script type="text/javascript"> -->
+    <!-- var arkiveApiKey = '_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1', -->
+    <!-- arkiveApiSpeciesName = 'Trichechus%20manatus', -->
+    <!-- // arkiveApiSpeciesName_2 = 'Dugong%20dugon', // note spaces replaced by %20 -->
+    <!-- //arkiveApiSpeciesId = '00000000-0000-0000-0000-000000000000',  -->
+        <!-- // optional, but recommended -->
 
-    arkiveApiWidth = 320,
-    arkiveApiHeight = 355,
-    arkiveApiImages = true, // whether to include thumbnails
-    arkiveApiText = true; // whether to include species facts / description
-</script>
+    <!-- arkiveApiWidth = 320, -->
+    <!-- arkiveApiHeight = 355, -->
+    <!-- arkiveApiImages = true, // whether to include thumbnails -->
+    <!-- arkiveApiText = true; // whether to include species facts / description -->
+<!-- </script> -->
 <!-- ensure the src attribute in the following script tag points to your JS file -->
-<script type="text/javascript" src="./js/script.js"></script>
+<!-- <script type="text/javascript" src="./js/script.js"></script> -->
 
-<div id="arkiveIframe"></div>
+<!-- <div id="arkiveIframe"></div> -->
 
 <!-- <div id="arkiveIframe_2"></div> -->
                     
 
-</div>
+<!-- </div> -->
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
