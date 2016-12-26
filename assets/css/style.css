@@ -126,6 +126,34 @@ h2 {
   overflow: hidden;
 }
 
+#bigLogo {
+  height: 450px;
+  width: auto;
+}
+
+#about-text {
+  vertical-align: center;
+}
+
+#infoHolder {
+  height: 600px;
+  width: 100%;
+  padding: 50px;
+  margin-bottom: 20px;
+  /*height: auto;*/
+  overflow: hidden;
+}
+
+#infoHolder > p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin: 20px;
+}
+
 /*.fullscreen-bg__video {
   position: absolute;
   top: 0;

@@ -26,7 +26,7 @@
 <body>
 
 <!--navbar-->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -36,13 +36,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo"></a>
+      <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logo"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active" id="watchLiveLink"><a href="#movie-holder">Watch Manatees Live<span class="sr-only">(current)</span></a></li>
+        <li><a href="#about-section">About Us<span class="sr-only">(current)</span></a></li>
+        <li><a href="#infoHolder">Learn More About Manatees<span class="sr-only">(current)</span></a></li>
         <!-- <li><a href="#">Link</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -64,12 +66,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://seaworldcares.com/Rescue-at-Seaworld/">SeaWorld Rescue and Research</a></li>
-        <li><a href="http://cffw.org/library/">Citizens for Florida Waterways</a></li>
-        <li><a href="http://www.defenders.org/florida-manatee/preserving-manatee-habitat">Defenders.org Manatee Info</a></li>
-        <li><a href="http://www.savethemanatee.org/">Save the Manatee Club</a></li>
-
-
+        <!-- <li><a href="#info-Holder"><span class="sr-only">(current)</span>Learn More About Manatees</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -88,7 +85,7 @@
 
 <div class="main-container">
   <!--jumbotron-->
-  <div class="jumbotron">
+  <div class="jumbotron" id="jumbotron">
     <!-- <div class="jumbo-content"> -->
       <!-- <div class="row"> -->
         <!-- <div class="col-md-2"></div> -->
@@ -120,13 +117,23 @@
 
   <h2>About Manatees Gone Wild and Our Mission</h2>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+  <div class="container row">
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+    <img src="assets/img/logo.png" class="col-md-6" id="bigLogo">
+
+    <div class="row" id="about-text">
+
+      <p class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+    </div>
+
+  </div>
 
 </div>
 
@@ -150,8 +157,23 @@
 <!-- <div class="container" id="arkiveIframe"></div> -->
 
 <div class="container" id="infoHolder">
-  
-  <!-- <div id="arkiveIframe"></div> -->
+  <h2>Links to Outside Information</h2>
+
+  <p>Explore the links below to learn more about manatees as well as the research and conservation efforts of multiple organizations. There are many view points represented here in order to give you the opportunity to form your own opinion.</p>
+
+  <div id="arkiveIframe">
+    
+  </div>
+
+  <div class="row">
+    <a href="http://cffw.org/library/" class="col-md-6"><img src="assets/img/cffw-logo.png"></a>
+    <a href="http://www.defenders.org/florida-manatee/preserving-manatee-habitat" class="col-md-6"><img src="assets/img/defender-logo.png"></a>
+  </div>
+  <div class="row">
+    <a href="https://seaworldcares.com/Rescue-at-Seaworld/" class="col-md-6"><img src="assets/img/seaWorldCares-logo.png"></a>
+    <a href="http://www.savethemanatee.org/" class="col-md-6"><img src="assets/img/save-manatee-logo.gif"></a>
+  </div>
+  </div>
 
 </div>
 
