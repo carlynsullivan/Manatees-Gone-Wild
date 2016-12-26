@@ -63,6 +63,8 @@ $(document).ready(function() {
 	    window.addEventListener('load',async_load,false);
 	  }
 	})();
+
+});//closing document ready function
 	
 
 	//arkive embedded feature1
@@ -124,5 +126,5 @@ $(document).ready(function() {
 	// ();
                     
 
-});//closing document ready function
+
 

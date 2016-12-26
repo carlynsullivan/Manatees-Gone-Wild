@@ -96,21 +96,27 @@ video {
 
 .caption {
   position: relative;
-  top: 120px;
+  top: 170px;
   float: right;
   right: 140px;
   width: 300px;
   height: 200px;
   /*background-color: white;*/
-  border-radius: 50%;
+  /*border-radius: 50%;*/
+  text-align: center;
+  color: white;
 }
 
-h3 {
-  position: relative;
-  top: 50px;
-  color: white;
-  /*text-shadow: 2px 2px #80CED7;*/
+h2 {
+  color: black;
+  text-shadow: 1px 1px #ffffff;
   text-align: center;
+}
+
+#about-section {
+  margin-bottom: 20px;
+  height: auto;
+  overflow: hidden;
 }
 
 /*.fullscreen-bg__video {
