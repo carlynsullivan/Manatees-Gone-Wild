@@ -62,7 +62,9 @@ $(document).ready(function() {
 	  }else{
 	    window.addEventListener('load',async_load,false);
 	  }
-	})();
+	})
+
+	();
 
 });//closing document ready function
 	

@@ -10,6 +10,10 @@
   height: 45px;
 }
 
+#watchLiveLink {
+  font-weight: bolder;
+}
+
 .main-container {
   background-color: navy;
   background-image: url(../img/underwaterLight.jpg);
@@ -114,8 +118,11 @@ h2 {
 }
 
 #about-section {
+  height: 600px;
+  width: 100%;
+  padding: 50px;
   margin-bottom: 20px;
-  height: auto;
+  /*height: auto;*/
   overflow: hidden;
 }
 
