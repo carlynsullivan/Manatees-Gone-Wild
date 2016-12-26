@@ -38,7 +38,7 @@ $(document).ready(function() {
 	  }
 	});
 
-
+	 //API embedded info request
 	function arkiveEmbedCallback(data){
 	  var iframeCreation='<iframe id="frame" name="widget" src="#" width="100%" height="1" marginheight="0" marginwidth="0" frameborder="no"></iframe>';
 	  var iframe=window.location.protocol+"//"+(data.results[0].url);
@@ -53,7 +53,7 @@ $(document).ready(function() {
 	(function(){
 	  function async_load(){
 	    var s=document.createElement('script');s.type='text/javascript';s.async=true;
-	    s.src='https://api.arkive.org/v2/embedScript/species/speciesName/Trichechus%20manatus?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=4ff16eb0-031e-4629-8557-9cb7012b1f58&w=650&h=570&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback';
+	    s.src='http://api.arkive.org/v2/embedScript/species/speciesName/Trichechus%20manatus?key=_Zek5NG_MCi2n9nruzXLOX0iE8pxr-OzSt2AEA34ZHY1&id=4ff16eb0-031e-4629-8557-9cb7012b1f58&w=650&h=570&mtype=all&tn=0&text=1&callback=arkiveEmbedCallback';
 	    var x=document.getElementsByTagName('script')[0];
 	    x.parentNode.insertBefore(s,x);
 	  }
