@@ -265,7 +265,7 @@ h2 {
   overflow : hidden;
 }
 
-.navbar-fixed-bottom,
+.navbar-fixed-bottom >
 .container {
   padding: 0px;
   height: 100px;
