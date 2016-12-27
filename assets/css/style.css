@@ -175,7 +175,7 @@ h2 {
   font-size: 16px;
   color: white;
   text-shadow: 1px 1px #000000;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -263,6 +263,14 @@ h2 {
 
 #frame {
   overflow : hidden;
+}
+
+.container {
+  padding: 0px;
+  height: 100px;
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
 }
 
 .navbar-fixed-bottom >
