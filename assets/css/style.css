@@ -15,8 +15,9 @@
 }
 
 .main-container {
-  background-color: navy;
+  background-color: transparent;
   background-image: url(../img/underwaterLight.jpg);
+  background-repeat: repeat-y;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -26,7 +27,7 @@
   text-align: center;
   color: black;
   text-shadow: 1px 1px white;
-  height: 600px;
+  min-height: 600px;
 	clear: both;
   background-color: transparent;
   /*background-color: mediumturquoise;*/
@@ -60,6 +61,28 @@ h1 {
   width: 20px;
 }
 
+.divider {
+  position: relative;
+  width: 100%;
+  /*top: 220px;*/
+}
+
+/*#jumboDivider {
+  top: 220px;
+}*/
+
+/*#aboutDivider {
+  top: -450px;
+}*/
+
+/*#movieDivider {
+  top: 120px;
+}*/
+
+/*#infoDivider {
+  top: -50px;
+}*/
+
 /*.jumbo-content {
   opacity: 1.0;
 }*/
@@ -74,18 +97,24 @@ h1 {
 }*/
 
 #movie-holder {
-  height: 600px;
+  min-height: 600px;
   width: 100%;
-  background-color: black;
+  background-color: transparent;
+  /*background-color: black;*/
   /*border-width: 2px 2px;*/
 }
 
 video {
+  margin-top: 20px;
+  border: 10px black solid;
+}
+
+/*video {
   float: left;
   position: relative;
   top: 100px;
   left: 80px;
-}
+}*/
 
 /*.placeholder {
   margin-top: 10px;
@@ -98,7 +127,7 @@ video {
 
 }*/
 
-.caption {
+/*.caption {
   position: relative;
   top: 170px;
   float: right;
@@ -107,51 +136,93 @@ video {
   height: 200px;
   /*background-color: white;*/
   /*border-radius: 50%;*/
-  text-align: center;
+  /*text-align: center;
   color: white;
-}
+}*/
 
 h2 {
-  color: black;
-  text-shadow: 1px 1px #ffffff;
+  margin-top: 80px;
+  color: white;
+  text-shadow: 1px 1px #000000;
   text-align: center;
+  background-color: transparent;
 }
 
 #about-section {
-  height: 600px;
+  min-height: 600px;
+  height: auto;
   width: 100%;
-  padding: 50px;
+  padding: 0 50 50 50;
   margin-bottom: 20px;
   /*height: auto;*/
   overflow: hidden;
+  background-color: inherit;
 }
 
+/*#aboutHeading {
+  margin-top: 80px;
+}*/
+
 #bigLogo {
-  height: 450px;
+  height: 375px;
   width: auto;
+  background-color: transparent;
 }
 
 #about-text {
   vertical-align: center;
+  background-color: transparent;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px #000000;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 #infoHolder {
-  height: 600px;
+  min-height: 600px;
+  height: auto;
   width: 100%;
   padding: 50px;
   margin-bottom: 20px;
   /*height: auto;*/
   overflow: hidden;
+  background-color: transparent;
+}
+
+#infoHeading {
+  margin-top: 30px;
+  color: white;
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+  background-color: transparent;
 }
 
 #infoHolder > p {
-  font-size: 20px;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px #000000;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  /*margin-bottom: 20px;*/
 }
 
 .row {
-  margin: 20px;
+  margin: 40px;
+}
+
+#seaworld-logo {
+  padding-top: 20px;
+}
+
+#cffw-logo {
+  height: 110px;
+  width: auto;
+}
+
+.info-logo {
+  height: 130px;
+  width: auto;
 }
 
 /*.fullscreen-bg__video {
@@ -190,7 +261,9 @@ h2 {
   margin-bottom: 20px;
 }*/
 
-#frame { overflow : hidden; }
+#frame {
+  overflow : hidden;
+}
 
 .navbar-fixed-bottom,
 .container {
@@ -199,6 +272,10 @@ h2 {
   text-align: center;
   background-color: #80CED7;
   width: 100%;
+}
+
+#iframe {
+  text-align: right;
 }
 
 .footer-text {

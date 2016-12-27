@@ -27,7 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logo"></a>
+      <a class="navbar-brand" href="#"><img src="assets/img/manatee2.png" class="logo"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,7 +56,7 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right"> -->
         <!-- <li><a href="#info-Holder"><span class="sr-only">(current)</span>Learn More About Manatees</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -68,7 +68,7 @@
             <li><a href="#">Separated link</a></li> -->
          <!--  </ul>
         </li> -->
-      </ul>
+      <!-- </ul> -->
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -94,6 +94,7 @@
       <!-- </div> -->
       
     <!-- </div> -->
+
   </div>
 
   <!-- <div class="fullscreen-bg">
@@ -106,11 +107,13 @@
 
 <div class="container" id="about-section">
 
-  <h2>About Manatees Gone Wild and Our Mission</h2>
+  <!-- <img src="./assets/img/large-wave-divider.png" class="divider" id="aboutDivider"> -->
+
+  <h2 id="aboutHeading">About Manatees Gone Wild and Our Mission</h2>
 
   <div class="container row">
 
-    <img src="assets/img/logo.png" class="col-md-6" id="bigLogo">
+    <img src="assets/img/manatee2.png" class="col-md-6" id="bigLogo">
 
     <div class="row" id="about-text">
 
@@ -126,9 +129,17 @@
 
   </div>
 
+
 </div>
 
 <div class="container" id="movie-holder">
+
+    <!-- <div class="caption"> -->
+
+    <h2>Live Feed from Cocoa Beach, FL</h2>
+
+    <!-- </div> -->
+
     <a name="movie-holder">
 
     <video width="550" controls>
@@ -137,8 +148,10 @@
     </video>
     <!--replace later with manatee gif, pull from API?-->
     <!-- <img src="assets/img/manatee.jpg" class="placeholder"> -->
-    <div class="caption"><h3>Click play to view our live feed from Cocoa Beach, FL!</h3></div>
     </a>
+
+    <!-- <img src="./assets/img/large-wave-divider.png" class="divider" id="movieDivider"> -->
+
   </div>
 
 
@@ -147,23 +160,36 @@
 </script> -->
 <!-- <div class="container" id="arkiveIframe"></div> -->
 
-<div class="container" id="infoHolder">
-  <h2>Links to Outside Information</h2>
+  <div class="container" id="infoHolder">
+    <h2 id="infoHeading">Links to Outside Information</h2>
 
-  <p>Explore the links below to learn more about manatees as well as the research and conservation efforts of multiple organizations. There are many view points represented here in order to give you the opportunity to form your own opinion.</p>
+    <p>Explore the links below to learn more about manatees as well as the research and conservation efforts of multiple organizations. There are many view points represented here in order to give you the opportunity to form your own opinion.</p>
 
-  <div id="arkiveIframe">
+    <div id="arkiveIframe">
+      
+    </div>
+
+    <div class="row">
+
+      <a href="https://seaworldcares.com/Rescue-at-Seaworld/" class="col-md-6"><img id="seaworld-logo" src="assets/img/seaWorldCares-logo.png"></a>
+
+      <a href="http://cffw.org/library/" class="col-md-6"><img id="cffw-logo" src="assets/img/cffw-logo.png"></a>
+      
+
+    </div>
     
-  </div>
+    <div class="row">
 
-  <div class="row">
-    <a href="http://cffw.org/library/" class="col-md-6"><img src="assets/img/cffw-logo.png"></a>
-    <a href="http://www.defenders.org/florida-manatee/preserving-manatee-habitat" class="col-md-6"><img src="assets/img/defender-logo.png"></a>
-  </div>
-  <div class="row">
-    <a href="https://seaworldcares.com/Rescue-at-Seaworld/" class="col-md-6"><img src="assets/img/seaWorldCares-logo.png"></a>
-    <a href="http://www.savethemanatee.org/" class="col-md-6"><img src="assets/img/save-manatee-logo.gif"></a>
-  </div>
+      <a href="http://www.defenders.org/florida-manatee/preserving-manatee-habitat" class="col-md-3"><img class="info-logo" src="assets/img/defender-logo.png"></a>
+
+      <a href="http://www.savethemanatee.org/" class="col-md-6"><img class="info-logo"src="assets/img/save-manatee-logo.gif"></a>
+
+      <a href="https://en.wikipedia.org/wiki/Manatee" class="col-md-3"><img class="info-logo" src="assets/img/wiki-logo.png"></a>
+    
+    </div>
+
+    <!-- <img src="./assets/img/large-wave-divider.png" class="divider" id="infoDivider"> -->
+
   </div>
 
 </div>
@@ -197,8 +223,17 @@
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     <span class="footer-text">Listen to the sounds of Cocoa Beach.</span>
-    <iframe src="https://tunein.com/embed/player/s249433?autplay=1" style="width:30%;height:100px;" scrolling="no" autoplay="yes" frameborder="no"></iframe>
-    <span class="footer-text">Click the play button twice.</span>
+
+    <iframe src="http://tunein.com/embed/player/s249433/?autoplay=true" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>
+
+    <!-- <iframe src="https://tunein.com/embed/player/s249433?autoplay=true" style="width:30%;height:100px;" scrolling="no" frameborder="no">
+    </iframe> -->
+
+    <!-- <iframe src="https://tunein.com/embed/player/s249433?autplay=true" style="width:30%;height:100px;" scrolling="no" autoplay="true" frameborder="no"></iframe> -->
+
+<!-- <iframe src="http://tunein.com/embed/player/s249433/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe> -->
+
+    <!-- <span class="footer-text">Click the play button twice.</span> -->
   </div>
 </nav>
 
