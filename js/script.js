@@ -17,6 +17,10 @@ $(document).ready(function() {
 	//baby manatee functionality
 	$(".manatee-float2").fadeIn().animate({width:"150px", top: "25%", left: "58%"}, 15000);
 
+	/*if ($(".manatee.float").width === "300px") {
+		//rotate upside down
+	}*/
+
 	// document.getElementById('watchLiveLink').on("click", function() {
 	// 	document.querySelector('#movie-holder').scrollIntoView({ 
 	//   		behavior: 'smooth'; 

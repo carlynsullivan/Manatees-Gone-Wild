@@ -20,6 +20,7 @@
   background-repeat: repeat-y;
   background-size: cover;
   background-repeat: no-repeat;
+  /*background-position: right;*/
 }
 
 .jumbotron {
@@ -213,6 +214,11 @@ h2 {
 
 #seaworld-logo {
   padding-top: 20px;
+}
+
+#cnn-logo {
+  height: 110px;
+  width: auto;
 }
 
 #cffw-logo {
